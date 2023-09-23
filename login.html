@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/a450a33da0.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <script src="register.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="home.html" class="logo">Booktopia</a>
+    <a class="logoimage" href="home.html">
+      <img class="logoimage" src="images/bb.png" alt="Logo">
+    </a>
+    <nav class="nav-items">
+      <a href="home.html">Home</a>
+      <a href="Books&Catagories.html">Books&Catagories</a>
+      <a href="deals.html">Deals</a>
+      <a href="blog.html">Blog&Events</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <form class="search-form">
+        <input type="text" placeholder="Search for books">
+        <button type="submit">Search</button>
+      </form>
+      <div class="icons">
+        <a href="deals.html" class="fas fa-heart"></a>
+        <a href="Books&Catagories.html" class="fas fa-shopping-cart"></a>
+        <a href="register.html" class="fas fa-user"></a>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <div class="login-page">
+      <div class="form-container">
+        <form action="" method="post">
+            <h3>Please enter your credentials to login.</h3>
+            <input type="text" name="name" id="username1" placeholder="enter your name" required class="box">
+            <input type="password" name="password" id="password2" placeholder="enter your password" required class="box">
+            <button type="button" onclick="login()" class="btnRegister">login</button>
+            <p> Not registered? <a href="register.html">Create an account</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

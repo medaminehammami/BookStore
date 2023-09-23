@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="main.css">
+   <title>Register</title>
+   <script src="register.js" ></script>
+</head>
+
+
+<body>
+   <header class="header">
+      <a href="home.html" class="logo">Booktopia</a>
+      <a class="logoimage" href="home.html">
+         <img class="logoimage" src="images/bb.png" alt="Logo">
+      </a>
+      <nav class="nav-items">
+         <a href="home.html">Home</a>
+         <a href="Books&Catagories.html">Books&Catagories</a>
+         <a href="deals.html">Deals</a>
+         <a href="blog.html">Blog&Events</a>
+         <a href="about.html">About</a>
+         <a href="contact.html">Contact</a>
+         <form class="search-form">
+            <input type="text" placeholder="Search for books">
+            <button type="submit">Search</button>
+         </form>
+         <div class="icons">
+            <a href="deals.html" class="fas fa-heart"></a>
+            <a href="Books&Catagories.html" class="fas fa-shopping-cart"></a>
+            <a href="register.html" class="fas fa-user"></a>
+        </div>
+      </nav>
+   </header>
+   <main class="main">
+      <div class="form-container">
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" id="username" placeholder="enter your name" required class="box">
+            <input type="email" name="email" id="email" placeholder="enter your email" required class="box">
+            <input type="password" name="password" id="password" placeholder="enter your password" required class="box">
+            <input type="password" name="cpassword" id="password1" placeholder="confirm your password" required class="box">
+            <select name="user_type" class="box">
+               <option value="user">user</option>
+               <option value="admin">admin</option>
+            </select>
+            <button type="button" onclick="signup()" class="btnRegister">Signup</button>
+            <p>already have an account? <a href="login.html">login now</a></p>
+         </form>
+      </div>
+   </main>
+
+
+</body>
+
+  <!-- footer section -->
+
+  <footer class="footer">
+   <div class="copy">&copy; 2023 Booktopia.inc</div>
+   <div class="bottom-links">
+     <div class="links">
+       <span>More Info</span>
+       <a href="home.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="contact.html">Contact</a>
+     </div>
+     <div class="links">
+       <span>Social Links</span>
+       <a href="#"><i class="fab fa-facebook"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+     </div>
+   </div>
+ </footer>
+ 
+
+</html>
